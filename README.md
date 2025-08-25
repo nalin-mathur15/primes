@@ -49,7 +49,7 @@ Contains all $q$-primes $\le N$.
 Contains the differences between consecutive primes: $g_i = p_{i+1} - p_i$
 
 ### Example
-Running the program with an upper bound of `3,000` produces:$$q=[2, 5, 17, 37, 101, 197, 257, 401, 577, 677, 1297, 1601, 2917]\\
+Running the program with an upper bound of `3,000` produces: $$q=[2, 5, 17, 37, 101, 197, 257, 401, 577, 677, 1297, 1601, 2917]\\
 g = [3, 12, 20, 64, 96, 60, 144, 176, 100, 620, 304, 1316, 220, 1220]$$ 
 
 ## Visualisations
