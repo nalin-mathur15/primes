@@ -60,10 +60,10 @@ This project includes Python visualisations that leverage the prime generation a
 This histogram displays the frequency distribution of gaps between consecutive $q$-primes. Some interesting statistics are:<br>
 - Mean: 1971.9
 - Median: 1336
-- Min: 3.0
-- Max: 9344.0
-- Quartile 1 (Q1): 649.0
-- Quartile 3 (Q3): 2778.0
+- Min: 3
+- Max: 9344
+- Quartile 1 (Q1): 649
+- Quartile 3 (Q3): 2778
 
 ### Prime Counting Function $\pi(x)$
 ![plot of the prime counting function](out/pi_curve.png)
