@@ -1,3 +1,5 @@
 .vscode
 .venv
 exporter.exe
+test.py
+exporter.cpp
