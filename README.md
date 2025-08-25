@@ -57,6 +57,7 @@ This project includes Python visualisations that leverage the prime generation a
 
 ### Histogram of Prime Gap Frequencies
 ![histogram of prime gap frequencies](out/dq_hist.png)
+
 This histogram displays the frequency distribution of gaps between consecutive $q$-primes. Some interesting statistics are:<br>
 - Mean: 1971.9
 - Median: 1336
@@ -67,10 +68,12 @@ This histogram displays the frequency distribution of gaps between consecutive $
 
 ### Prime Counting Function $\pi(x)$
 ![plot of the prime counting function](out/pi_curve.png)
+
 This is a plot of the number of (general) primes $\le x$. It is a well-known approximation that $\pi(x) \approx \frac{x}{\ln x}$ for large $x$.
 
 ### Specialised Counting Function $\pi_q(x)$
 ![plot of the number of q-primes less than or equal to x](out/q_count_curve.png)
+
 This is a plot of the number of $q$-primes $\le x$. The $y$-axis has a much smaller scale than the $\pi(x)$ plot, and it takes a more logarithmic shape than the almost-linear $\pi(x)$ plot.
 
 ## Performance Considerations
