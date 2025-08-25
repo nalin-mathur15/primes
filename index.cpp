@@ -44,13 +44,14 @@ int main() {
 
     long long N_in;
     if (!(cin >> N_in)) return 0;
-    if (N_in < 0) N_in = 0;
-    if (N_in > INT_MAX) N_in = INT_MAX;
+    if (N_in < 0) N_in = 0;               
+    if (N_in > INT_MAX) N_in = INT_MAX;   
     int n = static_cast<int>(N_in);
     Sieve s(n);
     vector<int> p = s.primesTill();
     vector<int> q;
-    for (long long k = 0; ; ++k) {
+    q.push_back(2);
+    for (long long k = 0; ; k += 2) {
         long long val = k*k + 1;
         if (val > n) break;
         if (s.isPrime(static_cast<int>(val))) q.push_back(static_cast<int>(val));
@@ -71,16 +72,17 @@ int main() {
     }
     auto print_vec = [](const vector<int>& v) {
         for (size_t i = 0; i < v.size(); ++i) {
-            if (i) cout << " ";
+            if (i) cout << ' ';
             cout << v[i];
         }
         cout << '\n';
     };
 
+    double ratio = static_cast<double>(q.size()) / p.size();
     print_vec(p);
     print_vec(dp);
     print_vec(q);
     print_vec(dq);
-
+    cout << ratio;
     return 0;
 }
