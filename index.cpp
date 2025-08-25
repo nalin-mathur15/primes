@@ -79,8 +79,8 @@ int main() {
     };
 
     double ratio = static_cast<double>(q.size()) / p.size();
-    print_vec(p);
-    print_vec(dp);
+    //print_vec(p);
+    //print_vec(dp);
     print_vec(q);
     print_vec(dq);
     cout << ratio;

@@ -48,7 +48,9 @@ Contains all primes $p$ where $p = n^2+1$ for some positive integer $n$, with $p
 ### Gap Array  
 Contains the differences between consecutive primes: $g_i = p_{i+1} - p_i$
 
-
+### Example
+Running the program with an upper bound of `3,000` produces:$$q=[2, 5, 17, 37, 101, 197, 257, 401, 577, 677, 1297, 1601, 2917]\\
+g = [3, 12, 20, 64, 96, 60, 144, 176, 100, 620, 304, 1316, 220, 1220]$$ 
 ## Performance Considerations
 
 - **Time Complexity**: 
@@ -65,7 +67,7 @@ Contains the differences between consecutive primes: $g_i = p_{i+1} - p_i$
 
 - **Key Optimisations**:
     - Sieve only up till $\sqrt{N}$
-    - Skip even numbers
+    - Skip odd $k$ as $k^2+1$ must be odd
     - Direct index access ($O(1)$)
     - Odd-only sieve
 ## Upcoming Features
